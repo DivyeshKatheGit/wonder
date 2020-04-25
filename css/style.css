@@ -1,0 +1,197 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper
+{
+    background-color: #070707;
+    color: #ffffff;
+}
+nav
+{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu-list
+{
+    display: flex;
+    align-items: center;
+}
+nav .brand
+{
+    margin-left: 120px;
+    color: #E40015;
+    font-size: 24px;
+    letter-spacing: -1.2px;
+}
+nav .brand p span
+{
+    position: relative;
+}
+nav .brand p span::before
+{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    top: -5%;
+    left: 50%;
+}
+nav .menu-list .menu-items
+{
+    display: flex;
+    margin-right: 100px;
+}
+nav .menu-list .menu-items li
+{
+    list-style: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+nav .menu-list .menu-items li a
+{
+    text-decoration: none;
+    color: #d9d9d9;
+    transition: .4s;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: -.8px;
+}
+nav .menu-list .menu-items li a#submit
+{
+    border: 1px solid #E40015;
+}
+nav .menu-list .menu-items li a:hover
+{
+    color: #dddddd;
+}
+nav .menu-icon
+{
+    background-color: #E40015;
+    padding: 10px;
+    cursor: pointer;
+}
+nav .menu-icon .line
+{
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 10px 0;
+}
+main
+{
+    height: 92vh;
+    padding-left: 80px;
+    display: flex;
+}
+main .main-left
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10;
+}
+main .main-left .content
+{
+    margin-top: 200px;
+    margin-bottom: 120px;
+    margin-right: 10px;
+}
+main .main-left .heading p
+{
+    position: relative;
+    font-size: 80px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+main .main-left .heading p::before
+{
+    position: absolute;
+    content: 'B';
+    bottom: 0;
+    left: -36%;
+    font-size: 350px;
+    color: #dddddd;
+    opacity: .04;
+}
+main .main-left .heading .search
+{
+    display: flex;
+    width: 500px;
+    height: 65px;
+    background-color: #E40015;
+    padding-left: 10px;
+    margin-right: -50px;
+}
+main .main-left .heading .search input
+{
+    width: 425px;
+    font-size: 20px;
+    color: #777777;
+    padding-left: 10px;
+}
+main .main-left .heading .search .search-icon
+{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 60px;
+}
+main .main-left .heading .explore a
+{
+    font-size: 50px;
+    color: #E40015;
+    text-decoration: none;
+}
+main .main-left .heading .btns
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+main .main-left .heading .btns .arrow
+{
+    font-size: 2rem;
+    margin: 0 40px;
+    color: #444444;
+    cursor: pointer;
+    transition: .4s;
+}
+main .main-left .heading .btns .arrow:hover
+{
+    color: #999999;
+}
+main .main-right .main-carousel
+{
+    height: 100%;
+    width: 500px;
+    overflow: hidden;
+}
+main .main-right .carousel
+{
+    display: flex;
+    transition: 1s;
+}
+main .main-right img
+{
+    width: 500px;
+    height: 90vh;
+}
